@@ -28,7 +28,7 @@ int main(void) {
   strcpy(aquiso.hobby, "Coding");
   strcpy(aquiso.nationality, "Russian");
   strcpy(aquiso.jabber, "388888@jabber.ru");
-  strcpy(aquiso.discord,"master#0001"); // a is cyrillic.
+  strcpy(aquiso.discord,"zet#0001");
 
   printf("Nickname: %s\nHobby: %s\nNationality: %s\nJabber: %s\nDiscord: %s", aquiso.nickname, aquiso.hobby, aquiso.nationality, aquiso.jabber, aquiso.discord);
   return 0;
