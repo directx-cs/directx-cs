@@ -18,7 +18,6 @@ struct person {
   char nationality    [MAX_CHARS];
   // contact
   char jabber         [MAX_CHARS];
-  char discord        [MAX_CHARS]; 
 };
 
 int main(void) {
@@ -28,9 +27,8 @@ int main(void) {
   strcpy(aquiso.hobby, "Coding");
   strcpy(aquiso.nationality, "Russian");
   strcpy(aquiso.jabber, "388888@jabber.ru");
-  strcpy(aquiso.discord,"zet#0001");
-
-  printf("Nickname: %s\nHobby: %s\nNationality: %s\nJabber: %s\nDiscord: %s", aquiso.nickname, aquiso.hobby, aquiso.nationality, aquiso.jabber, aquiso.discord);
+  
+  printf("Nickname: %s\nHobby: %s\nNationality: %s\nJabber: %s\nDiscord: %s", aquiso.nickname, aquiso.hobby, aquiso.nationality, aquiso.jabber);
   return 0;
 }
 ```
