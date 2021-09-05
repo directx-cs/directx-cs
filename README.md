@@ -15,7 +15,6 @@ Hey there my nickname is Aquiso. I love hacking, reserve engineering, operationa
 struct person {
   char nickname       [MAX_CHARS];
   char hobby          [MAX_CHARS];
-  char nationality    [MAX_CHARS];
   // contact
   char jabber         [MAX_CHARS];
 };
@@ -28,7 +27,7 @@ int main(void) {
   strcpy(aquiso.nationality, "Russian");
   strcpy(aquiso.jabber, "388888@jabber.ru");
   
-  printf("Nickname: %s\nHobby: %s\nNationality: %s\nJabber: %s\nDiscord: %s", aquiso.nickname, aquiso.hobby, aquiso.nationality, aquiso.jabber);
+  printf("Nickname: %s\nHobby: %s\nNationality: %s\nDiscord: %s", aquiso.nickname, aquiso.hobby, aquiso.jabber);
   return 0;
 }
 ```
