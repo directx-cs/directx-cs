@@ -2,8 +2,9 @@ Hey there my nickname is Aquiso. I love hacking, reserve engineering, operationa
 <img align ="right" src = "https://raw.githubusercontent.com/pratik-kale20/pratik-kale20/main/linux.png" width="250" height="250">
 
 ```asm
-	.text
-	.section	.rodata
+.text
+.section	
+.rodata
 	.align 8
 .LC0:
 	.string	"Nickname: %s\nHobby: %s\nNationality: %s\nDiscord: %s"
