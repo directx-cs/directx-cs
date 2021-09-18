@@ -57,17 +57,6 @@ main:
 	.cfi_def_cfa 7, 8
 	ret
 	.cfi_endproc
-0:
-	.string	 "GNU"
-1:
-	.align 8
-	.long	 0xc0000002
-	.long	 3f - 2f
-2:
-	.long	 0x3
-3:
-	.align 8
-4:
 ```
 ![Github stats](https://github-readme-stats.vercel.app/api?username=zet-sec&show_icons=true&hide_border=true&icon_color=ffffff&bg_color=0000FF&title_color=fff&text_color=fff)
 ## Show ❤️ By Starring My Repos!
