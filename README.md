@@ -2,12 +2,12 @@ Hey there my nickname is Aquiso. I love hacking, reserve engineering, operationa
 <img align ="right" src = "https://raw.githubusercontent.com/pratik-kale20/pratik-kale20/main/linux.png" width="250" height="250">
 
 ```asm
-.text
-.section	
-.rodata
+	.file	"main.c"
+	.text
+	.section	.rodata
 	.align 8
 .LC0:
-	.string	"Nickname: %s\nHobby: %s\nNationality: %s\nDiscord: %s"
+	.string	"Nickname: %s\nHobby: %s\nNationality: %s\nJabber: %s"
 	.text
 	.globl	main
 	.type	main, @function
@@ -20,36 +20,36 @@ main:
 	.cfi_offset 6, -16
 	movq	%rsp, %rbp
 	.cfi_def_cfa_register 6
-	subq	$912, %rsp
+	subq	$96, %rsp
 	movq	%fs:40, %rax
 	movq	%rax, -8(%rbp)
 	xorl	%eax, %eax
-	leaq	-912(%rbp), %rax
-	movl	$7628154, (%rax)
-	leaq	-912(%rbp), %rax
-	addq	$300, %rax
-	movl	$1768189763, (%rax)
-	movw	$26478, 4(%rax)
-	movb	$0, 6(%rax)
-	leaq	-912(%rbp), %rax
-	addq	$600, %rax
-	movabsq	$7656181180642375731, %rsi
-	movabsq	$8462877718644679265, %rdi
-	movq	%rsi, (%rax)
-	movq	%rdi, 8(%rax)
-	movb	$0, 16(%rax)
-	leaq	-912(%rbp), %rax
-	leaq	600(%rax), %rcx
-	leaq	-912(%rbp), %rax
-	leaq	300(%rax), %rdx
-	leaq	-912(%rbp), %rax
+	movl	$7628154, -84(%rbp)
+	movabsq	$5561777788738105155, %rax
+	movabsq	$4909035135769734241, %rdx
+	movq	%rax, -48(%rbp)
+	movq	%rdx, -40(%rbp)
+	movabsq	$7956013840588961381, %rax
+	movabsq	$7809644454833168487, %rdx
+	movq	%rax, -32(%rbp)
+	movq	%rdx, -24(%rbp)
+	movl	$1936290681, -16(%rbp)
+	movb	$0, -12(%rbp)
+	movabsq	$4639663587670190456, %rax
+	movabsq	$8227644618978715763, %rdx
+	movq	%rax, -80(%rbp)
+	movq	%rdx, -72(%rbp)
+	movw	$117, -64(%rbp)
+	leaq	-80(%rbp), %rcx
+	leaq	-48(%rbp), %rdx
+	leaq	-84(%rbp), %rax
 	movq	%rax, %rsi
 	leaq	.LC0(%rip), %rdi
 	movl	$0, %eax
 	call	printf@PLT
 	movl	$0, %eax
-	movq	-8(%rbp), %rdx
-	xorq	%fs:40, %rdx
+	movq	-8(%rbp), %rsi
+	xorq	%fs:40, %rsi
 	je	.L3
 	call	__stack_chk_fail@PLT
 .L3:
